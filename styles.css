@@ -21,24 +21,60 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 45ch 1fr;
   grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
 }
 
 .sidebar {
-  background-color:deepskyblue;
-  grid-column: 1 2;
-  grid-row: 1 -1;
+  background-color: #1E99E6;
+  color: white;
+  font-weight: bold;
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  gap: 3rem 0;
+  padding-left: 2.6rem;
+}
+
+.sidebar .branding {
+  font-size: 2.6rem;
+  margin-top: 1rem;
+}
+
+.sidebar ul {
+  font-size: 2.0rem;
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  gap: 1rem
+}
+
+/* One column for the icon, another for the text */
+.sidebar .branding,
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+}
+
+.nav-item .nav-icon {
+  grid-column: 1 / 2;
+}
+
+.nav-item .nav-link {
+  grid-column: 2 / 3;
 }
 
 .header {
   background-color:white;
-  grid-column: 2 -1;
-  grid-row: 1 2;
+  grid-area: header;
 }
 
 .content {
   background-color:lightgray;
-  grid-column: 2 -1;
-  grid-row: 2 -1;
+  grid-area: content;
 }
