@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 45ch 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 6fr; /* CHANGE TO NON FR UNITS!!*/
   grid-template-areas:
     "sidebar header"
     "sidebar content";
@@ -49,7 +49,7 @@ body {
   list-style-type: none;
   padding-left: 0;
   display: grid;
-  gap: 1rem
+  gap: 1.2rem
 }
 
 /* One column for the icon, another for the text */
@@ -75,6 +75,26 @@ body {
 }
 
 .content {
+  font-size: 2rem;
   background-color:lightgray;
   grid-area: content;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-areas: ; */
+}
+
+.cards {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.announcements {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+}
+
+.trending {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
 }
