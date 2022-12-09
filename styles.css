@@ -37,13 +37,12 @@ body {
   grid-area: sidebar;
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  gap: 3rem 0;
-  padding-left: 2.6rem;
 }
 
 .sidebar .branding {
   font-size: 2.6rem;
   margin-top: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .sidebar ul {
@@ -51,17 +50,26 @@ body {
   list-style-type: none;
   padding-left: 0;
   display: grid;
-  gap: 1.4rem
+  /* gap: 1.4rem; */
 }
 
-/* One column for the icon, another for the text */
+/* Link and Logo have 1 column for the icon, another for the text */
 .sidebar .branding,
 .nav-item a {
   text-decoration: none;
   color: white;
   display: grid;
   grid-template-columns: 4rem 1fr;
+  padding-left: 2.6rem;
 }
+
+.nav-item {
+  line-height: 4.2rem;
+}
+
+.nav-item:hover {
+  background-color: deepskyblue;
+} 
 
 .nav-icon {
   grid-column: 1 / 2;
@@ -112,7 +120,6 @@ body {
 
 .project-card {
   height: 24rem;
-  background-color: white;
   border-left: solid salmon 1.1rem;
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -148,10 +155,6 @@ body {
   gap: 1rem;
 }
 
-.announcements-card {
-  background-color: white;
-}
-
 .trending {
   grid-column: 2 / -1;
   grid-row: 2 / 3;
@@ -160,13 +163,10 @@ body {
   gap: 1rem;
 }
 
-.trending-card {
-  background-color: white;
-}
-
 .project-card,
 .announcements-card,
 .trending-card {
+  background-color: white;
   box-shadow: 0.4rem 0.5rem 0.7rem 0.1rem rgba(140, 140, 140, 0.35);
   border-radius: 1.1rem;
 }
