@@ -109,15 +109,14 @@ body {
   grid-template-rows: repeat(auto-fill, 24rem);
   grid-template-columns: repeat(auto-fill, minmax(min(40rem, 100%), 1fr));
   gap: 3rem;
-  /* padding-inline: 1rem; */
 }
 
 .project-card {
-  max-height: 24rem;
+  min-height: 24rem;
   background-color: white;
   border-left: solid salmon 1.1rem;
   display: grid;
-  grid-template-columns: 70% min-content min-content min-content;
+  grid-template-columns: 1fr min-content;
   grid-template-rows: 1.5rem 1fr min-content;
   padding: 2.5rem 4rem 2.5rem 2.5rem;
   gap: 1rem 2rem;
@@ -130,26 +129,27 @@ body {
 
 .project-card-description {
   color: #555;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   overflow: auto;
 }
 
-.project-card-button-favorite,
-.project-card-button-view,
-.project-card-button-share {
-  /* justify-self: end; */
+.project-card-buttons {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 2em);
 }
 
 .project-card-button-favorite {
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
 }
 
 .project-card-button-view {
-  grid-column: 3 / 4;
+  grid-column: 2 / 3;
 }
 
 .project-card-button-share {
-  grid-column: 4 / 5;
+  grid-column: 3 / 4;
 }
 
 .announcements {
