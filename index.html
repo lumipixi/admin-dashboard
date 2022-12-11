@@ -12,93 +12,119 @@
   <div class="container">
     <div class="sidebar">
       <div class="branding">
-        <span class="nav-icon">🤩</span>
+        <img class="nav-icon" src="./img/icons/dashboard.png">
         <span class="nav-link">Dashboard</span>
       </div>
       <nav>
         <ul class="navigation">
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Home</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Profile</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Messages</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">History</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Tasks</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Communities</span></a></li>
+          <li class="nav-item"><a href="#"><img class="nav-icon" src="./img/icons/home.png"><span class="nav-link">Home</span></a></li>
+          <li class="nav-item"><a href="#"><img class="nav-icon" src="./img/icons/profile.png"><span class="nav-link">Profile</span></a></li>
+          <li class="nav-item"><a href="#"><img class="nav-icon" src="./img/icons/messages.png"><span class="nav-link">Messages</span></a></li>
+          <li class="nav-item"><a href="#"><img class="nav-icon" src="./img/icons/clock.png"><span class="nav-link">History</span></a></li>
+          <li class="nav-item"><a href="#"><img class="nav-icon" src="./img/icons/tasks.png"><span class="nav-link">Tasks</span></a></li>
+          <li class="nav-item"><a href="#"><img class="nav-icon" src="./img/icons/community.png"><span class="nav-link">Communities</span></a></li>
         </ul>
       </nav>
       <nav>
         <ul class="navigation">
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Settings</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Support</span></a></li>
-          <li class="nav-item"><a href="https://neocities.org"><span class="nav-icon">O</span><span class="nav-link">Privacy</span></a></li>
+          <li class="nav-item"><a href="https://neocities.org"><img class="nav-icon" src="./img/icons/gear.png"><span class="nav-link">Settings</span></a></li>
+          <li class="nav-item"><a href="https://neocities.org"><img class="nav-icon" src="./img/icons/help-circle.png"><span class="nav-link">Support</span></a></li>
+          <li class="nav-item"><a href="https://neocities.org"><img class="nav-icon" src="./img/icons/shield-key.png"><span class="nav-link">Privacy</span></a></li>
         </ul>
       </nav>
     </div>
     <div class="header">
-      I'm coming for you last.
+      <div class="header-first-row">
+        <div class="search">
+          <label for="search-bar" class="search-label"><img src="./img/icons/magnify.png"></label>
+          <input id="search-bar" name="search-query" type="search">
+        </div>
+
+        <div class="profile-actions">
+          <img class="profile-notifications" src="./img/icons/bell-ring.png">
+          <img class="profile-avatar" src="./img/worm.png">
+          <span class="profile-username">Gumi Wormax</span>
+        </div>
+      </div>
+
+      <div class="header-second-row">
+        <div class="greeter">
+          <img class="greeter-avatar" src="./img/worm.png">
+          <div class="greeter-hello">Welcome back,</div>
+          <div class="greeter-username">Gumi Wormax (@gummiwormfrenzy)</div>
+        </div>
+
+        <div class="standard-actions">
+          <button class="standard-button">New</button>
+          <button class="standard-button">Upload</button>
+          <button class="standard-button">Share</button>
+        </div>
+      </div>
+
     </div>
     <main class="content">
 
       <div class="projects">
-        <div class="section-title">Your Projects</div>
+        <div class="section-title">Open Source Projects</div>
         <div class="cards-container">
 
           <div class="project-card">
-            <div class="project-card-title">A cool project</div>
-            <div class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="project-card-title">Luna Calculator</div>
+            <div class="project-card-description">A simple web calculator designed in the style of Windows XP. Experience the Luna interface again!</div>
             <div class="project-card-buttons">
-              <div class="project-card-button-favorite">🌟</div>
-              <div class="project-card-button-view">👁️</div>
-              <div class="project-card-button-share">🪴</div>
+              <div class="project-card-button-favorite"><img src="./img/icons/star.png"></div>
+              <div class="project-card-button-view"><img src="./img/icons/eye.png"></div>
+              <div class="project-card-button-share"><img src="./img/icons/share-variant.png"></div>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="project-card-title">A cool project</div>
-            <div class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="project-card-title">Vaporwave RPS</div>
+            <div class="project-card-description">A Rock Paper Scissors game with a retro vaporwave interface. Has some simple configuration options.</div>
             <div class="project-card-buttons">
-              <div class="project-card-button-favorite">🌟</div>
-              <div class="project-card-button-view">👁️</div>
-              <div class="project-card-button-share">🪴</div>
+              <div class="project-card-button-favorite"><img src="./img/icons/star.png"></div>
+              <div class="project-card-button-view"><img src="./img/icons/eye.png"></div>
+              <div class="project-card-button-share"><img src="./img/icons/share-variant.png"></div>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="project-card-title">A cool project</div>
-            <div class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="project-card-title">Code Codex</div>
+            <div class="project-card-description">An easy to use website full of useful cheatsheets for programming languages, Linux commands, AI prompts and much more!</div>
             <div class="project-card-buttons">
-              <div class="project-card-button-favorite">🌟</div>
-              <div class="project-card-button-view">👁️</div>
-              <div class="project-card-button-share">🪴</div>
+              <div class="project-card-button-favorite"><img src="./img/icons/star.png"></div>
+              <div class="project-card-button-view"><img src="./img/icons/eye.png"></div>
+              <div class="project-card-button-share"><img src="./img/icons/share-variant.png"></div>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="project-card-title">A cool project</div>
-            <div class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="project-card-title">Sobres</div>
+            <div class="project-card-description">A tool that helps users track their personal expenses. It offers snowball and avalanche plan options based on their spending habits.</div>
             <div class="project-card-buttons">
-              <div class="project-card-button-favorite">🌟</div>
-              <div class="project-card-button-view">👁️</div>
-              <div class="project-card-button-share">🪴</div>
+              <div class="project-card-button-favorite"><img src="./img/icons/star.png"></div>
+              <div class="project-card-button-view"><img src="./img/icons/eye.png"></div>
+              <div class="project-card-button-share"><img src="./img/icons/share-variant.png"></div>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="project-card-title">A cool project</div>
-            <div class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="project-card-title">LibreSugar</div>
+            <div class="project-card-description">Cross platform insulin tracker. Connect your insulin device via Bluetooth or USB and track your levels with ease.</div>
             <div class="project-card-buttons">
-              <div class="project-card-button-favorite">🌟</div>
-              <div class="project-card-button-view">👁️</div>
-              <div class="project-card-button-share">🪴</div>
+              <div class="project-card-button-favorite"><img src="./img/icons/star.png"></div>
+              <div class="project-card-button-view"><img src="./img/icons/eye.png"></div>
+              <div class="project-card-button-share"><img src="./img/icons/share-variant.png"></div>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="project-card-title">A cool project</div>
-            <div class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="project-card-title">TubeCalc</div>
+            <div class="project-card-description">A simple, open-source calculator for YouTube video lengths, when played at faster than normal speeds. Perfect for busy learners and educators.</div>
             <div class="project-card-buttons">
-              <div class="project-card-button-favorite">🌟</div>
-              <div class="project-card-button-view">👁️</div>
-              <div class="project-card-button-share">🪴</div>
+              <div class="project-card-button-favorite"><img src="./img/icons/star.png"></div>
+              <div class="project-card-button-view"><img src="./img/icons/eye.png"></div>
+              <div class="project-card-button-share"><img src="./img/icons/share-variant.png"></div>
             </div>
           </div>
 
@@ -106,17 +132,51 @@
       </div>
 
 
-      <div class="announcements">
-        <div class="section-title">Announcements</div>
-        <div class="announcements-card">
-          asdf
+      <div class="news">
+        <div class="section-title">News</div>
+        <div class="news-card">
+
+          <div class="news-item">
+            <div class="news-item-title">PICO-8 Demakes</div>
+            <div class="news-item-text">Your favorite game, now in the charming style of an imaginary 8-bit computer!</div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item-title">Chat GPT: Friend or foe?</div>
+            <div class="news-item-text">Revolutionary AI writes code and articles - will it replace you?</div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item-title">The magic of Neocities</div>
+            <div class="news-item-text">Neocities brings back the magic of the old web - learn to make a website here!</div>
+          </div>
+
         </div>
       </div>
 
       <div class="trending">
         <div class="section-title">Trending</div>
         <div class="trending-card">
-          asdf
+          <div class="trending-item">
+            <img class="trending-item-avatar" src="./img/cat.png">
+            <div class="trending-item-username">@ilovecatnip</div>
+            <div class="trending-item-userinfo">Catnip enthusiast and activist!</div>
+          </div>
+          <div class="trending-item">
+            <img class="trending-item-avatar" src="./img/worm.png">
+            <div class="trending-item-username">@gummiwormfrenzy</div>
+            <div class="trending-item-userinfo">Organic free-range gummi worms</div>
+          </div>
+          <div class="trending-item">
+            <img class="trending-item-avatar" src="./img/keyboard.jpg">
+            <div class="trending-item-username">@keebs</div>
+            <div class="trending-item-userinfo">Programmers: Save your wrists today</div>
+          </div>
+          <div class="trending-item">
+            <img class="trending-item-avatar" src="./img/cute-nails.jpg">
+            <div class="trending-item-username">@yo_rue_rue</div>
+            <div class="trending-item-userinfo">HBO pls make 99 Euphoria seasons</div>
+          </div>
         </div>
       </div>
 
